@@ -1,8 +1,8 @@
-#! /bin/bash 
+#! /bin/bash
 
 # We're installing httperf, so it requires root to run.
-if [[ $EUID -ne 0]]
-then:
+if [[ $EUID -ne 0 ]]
+then
   echo "Script requires root to run"
   exit
 fi
