@@ -16,7 +16,8 @@ iter_httperf() {
 	done
 }
 
-# iterate over httperf using a set of simultaneous connections.
-iter_httperf $1 6250
-iter_httperf $1 12500
-iter_httperf $1 25000
+# Print tutorial
+echo "Usage - ./stress.sh <ip_addr - ###.###.###.###> <number-of-connections - ####...>"
+
+# Start httperf
+iter_httperf $1 $2
